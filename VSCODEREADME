@@ -1,1 +1,994 @@
-This is the new LGC_VSCODE Repository
+
+git add
+git commit
+git push origin master
+
+cw-ky@TKPD-001:~/LGC_VSCODE$ 
+jcw-ky@TKPD-001:~/LGC_VSCODE$ git add README2
+jcw-ky@TKPD-001:~/LGC_VSCODE$ git commit README2 -m "Testing the Re-commit feature"
+[master 050e20b] Testing the Re-commit feature
+ 1 file changed, 3 insertions(+)
+jcw-ky@TKPD-001:~/LGC_VSCODE$ 
+jcw-ky@TKPD-001:~/LGC_VSCODE$ git push origin master
+
+
+Sample Terminal Sessions:
+
+cw-ky@TKPD-001:~/LGC_VSCODE$ git add README2
+jcw-ky@TKPD-001:~/LGC_VSCODE$ ls -l
+total 8
+-rw-r--r-- 1 jcw-ky jcw-ky  9 Oct 24 15:20 README2
+-rw-r--r-- 1 jcw-ky jcw-ky 38 Oct 24 14:59 VSCODEREADME
+jcw-ky@TKPD-001:~/LGC_VSCODE$ git commit -m "This is for the 2nd README README2"
+[master bfd6d5d] This is for the 2nd README README2
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README2
+jcw-ky@TKPD-001:~/LGC_VSCODE$ git push origin master
+Username for 'https://github.com': jamwilky
+Password for 'https://jamwilky@github.com': 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 307 bytes | 307.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/jamwilky/LGC_VSCODE.git
+   9e9003f..bfd6d5d  master -> master
+jcw-ky@TKPD-001:~/LGC_VSCODE$ git fetch origin
+jcw-ky@TKPD-001:~/LGC_VSCODE$ git fetch origin
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/jamwilky/LGC_VSCODE
+   bfd6d5d..4940ee2  master     -> origin/master
+jcw-ky@TKPD-001:~/LGC_VSCODE$ ls -l
+total 8
+-rw-r--r-- 1 jcw-ky jcw-ky  9 Oct 24 15:20 README2
+-rw-r--r-- 1 jcw-ky jcw-ky 38 Oct 24 14:59 VSCODEREADME
+jcw-ky@TKPD-001:~/LGC_VSCODE$ gedit README2
+jcw-ky@TKPD-001:~/LGC_VSCODE$ ls -l
+total 8
+-rw-r--r-- 1 jcw-ky jcw-ky  9 Oct 24 15:20 README2
+-rw-r--r-- 1 jcw-ky jcw-ky 38 Oct 24 14:59 VSCODEREADME
+jcw-ky@TKPD-001:~/LGC_VSCODE$ git commit origin master
+error: pathspec 'origin' did not match any file(s) known to git
+error: pathspec 'master' did not match any file(s) known to git
+jcw-ky@TKPD-001:~/LGC_VSCODE$ git fetch origin
+jcw-ky@TKPD-001:~/LGC_VSCODE$ ls -l
+total 8
+-rw-r--r-- 1 jcw-ky jcw-ky  9 Oct 24 15:20 README2
+-rw-r--r-- 1 jcw-ky jcw-ky 38 Oct 24 14:59 VSCODEREADME
+jcw-ky@TKPD-001:~/LGC_VSCODE$ gedit README2
+jcw-ky@TKPD-001:~/LGC_VSCODE$ git commit origin master
+error: pathspec 'origin' did not match any file(s) known to git
+error: pathspec 'master' did not match any file(s) known to git
+jcw-ky@TKPD-001:~/LGC_VSCODE$ git fetch origin master
+From https://github.com/jamwilky/LGC_VSCODE
+ * branch            master     -> FETCH_HEAD
+jcw-ky@TKPD-001:~/LGC_VSCODE$ git push origin master
+Username for 'https://github.com': jamwilky
+Password for 'https://jamwilky@github.com': 
+To https://github.com/jamwilky/LGC_VSCODE.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/jamwilky/LGC_VSCODE.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+jcw-ky@TKPD-001:~/LGC_VSCODE$ git pull origin master
+From https://github.com/jamwilky/LGC_VSCODE
+ * branch            master     -> FETCH_HEAD
+Updating bfd6d5d..4940ee2
+Fast-forward
+ README2 | 2 ++
+ 1 file changed, 2 insertions(+)
+jcw-ky@TKPD-001:~/LGC_VSCODE$ ls -l
+total 8
+-rw-r--r-- 1 jcw-ky jcw-ky 46 Oct 24 16:05 README2
+-rw-r--r-- 1 jcw-ky jcw-ky 38 Oct 24 14:59 VSCODEREADME
+jcw-ky@TKPD-001:~/LGC_VSCODE$ gedit README2
+jcw-ky@TKPD-001:~/LGC_VSCODE$ ls -l
+total 8
+-rw-r--r-- 1 jcw-ky jcw-ky 46 Oct 24 16:05 README2
+-rw-r--r-- 1 jcw-ky jcw-ky 38 Oct 24 14:59 VSCODEREADME
+jcw-ky@TKPD-001:~/LGC_VSCODE$ pwd
+/home/jcw-ky/LGC_VSCODE
+jcw-ky@TKPD-001:~/LGC_VSCODE$ 
+jcw-ky@TKPD-001:~/LGC_VSCODE$ git commit -m "Friday Updates"
+On branch master
+Changes not staged for commit:
+	modified:   README2
+
+Untracked files:
+	.idea/
+
+no changes added to commit
+jcw-ky@TKPD-001:~/LGC_VSCODE$ ls -l
+total 8
+-rw-r--r-- 1 jcw-ky jcw-ky 97 Oct 25 12:32 README2
+-rw-r--r-- 1 jcw-ky jcw-ky 38 Oct 24 14:59 VSCODEREADME
+jcw-ky@TKPD-001:~/LGC_VSCODE$ git commit -m "Friday 1-25 Updates"
+On branch master
+Changes not staged for commit:
+	modified:   README2
+
+Untracked files:
+	.idea/
+
+no changes added to commit
+jcw-ky@TKPD-001:~/LGC_VSCODE$ ls -l
+total 8
+-rw-r--r-- 1 jcw-ky jcw-ky 97 Oct 25 12:32 README2
+-rw-r--r-- 1 jcw-ky jcw-ky 38 Oct 24 14:59 VSCODEREADME
+jcw-ky@TKPD-001:~/LGC_VSCODE$ gedit readme2
+jcw-ky@TKPD-001:~/LGC_VSCODE$ gedit README2
+jcw-ky@TKPD-001:~/LGC_VSCODE$ git push origin master
+Username for 'https://github.com': jamwilky
+Password for 'https://jamwilky@github.com': 
+Everything up-to-date
+jcw-ky@TKPD-001:~/LGC_VSCODE$ ls-l
+ls-l: command not found
+jcw-ky@TKPD-001:~/LGC_VSCODE$ ls -l
+total 8
+-rw-r--r-- 1 jcw-ky jcw-ky 97 Oct 25 12:32 README2
+-rw-r--r-- 1 jcw-ky jcw-ky 38 Oct 24 14:59 VSCODEREADME
+jcw-ky@TKPD-001:~/LGC_VSCODE$ 
+jcw-ky@TKPD-001:~/LGC_VSCODE$ git add README2
+jcw-ky@TKPD-001:~/LGC_VSCODE$ git commit README2 -m "Testing the Re-commit feature"
+[master 050e20b] Testing the Re-commit feature
+ 1 file changed, 3 insertions(+)
+jcw-ky@TKPD-001:~/LGC_VSCODE$ 
+jcw-ky@TKPD-001:~/LGC_VSCODE$ git push origin master
+Username for 'https://github.com': jamwilky
+Password for 'https://jamwilky@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 375 bytes | 375.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/jamwilky/LGC_VSCODE.git
+   4940ee2..050e20b  master -> master
+jcw-ky@TKPD-001:~/LGC_VSCODE$ 
+jcw-ky@TKPD-001:~/LGC_VSCODE$ ls -l
+total 8
+-rw-r--r-- 1 jcw-ky jcw-ky 97 Oct 25 12:32 README2
+-rw-r--r-- 1 jcw-ky jcw-ky 38 Oct 24 14:59 VSCODEREADME
+jcw-ky@TKPD-001:~/LGC_VSCODE$ 
+
+
+
+
+
+Websites:
+https://www.howtoforge.com/tutorial/install-git-and-github-on-ubuntu/#links
+https://stackoverflow.com/questions/21134960/what-does-changes-not-staged-for-commit-mean
+
+
+
+Got it!
+
+This website uses cookies to ensure you get the best experience on our website, analyze site traffic and show you relevant ads. More info
+Log in or Sign up
+Howtoforge
+
+    Tutorials
+        Tutorial search
+    Tags
+    Forums
+    Linux Commands
+    Subscribe
+    ISPConfig
+    News
+
+Home
+Installing and using Git and GitHub on Ubuntu Linux: A beginner's guide
+>
+Project tracking, teamwork & client reporting like you've never seen before. Start Your Free Trial Now.
+Installing and using Git and GitHub on Ubuntu Linux: A beginner's guide
+On this page
+
+    1 Installing Git for Linux
+    2 Configuring GitHub
+    3 Creating a local repository
+    4 Creating a README file to describe the repository
+    5 Adding repository files to an index
+    6 Committing changes made to the index
+    7 Creating a repository on GitHub
+    8 Pushing files in local repository to GitHub repository
+    Links
+
+GitHub is a treasure trove of some of the world's best projects, built by the contributions of developers all across the globe. This simple, yet extremely powerful platform helps every individual interested in building or developing something big to contribute and get recognized in the open source community.
+
+This tutorial is a quick setup guide for installing and using GitHub and how to perform its various functions of creating a repository locally, connecting this repo to the remote host that contains your project (where everyone can see), committing the changes and finally pushing all the content in the local system to GitHub.
+
+Please note that this tutorial assumes that you have a basic knowledge of the terms used in Git such as push, pull requests, commit, repository, etc. It also requires you to register to GitHub here and make a note of your GitHub username. So let's begin:
+1 Installing Git for Linux
+
+Download and install Git for Linux:
+
+sudo apt-get install git
+
+The above command is for Ubuntu and works on all Recent Ubuntu versions, tested from Ubuntu 16.04 to Ubuntu 18.04 LTS (Bionic Beaver) and it's likely to work the same way on future versions.
+2 Configuring GitHub
+
+Once the installation has successfully completed, the next thing to do is to set up the configuration details of the GitHub user. To do this use the following two commands by replacing "user_name" with your GitHub username and replacing "email_id" with your email-id you used to create your GitHub account.
+
+git config --global user.name "user_name"
+
+git config --global user.email "email_id"
+
+The following image shows an example of my configuration with my "user_name" being "akshaypai" and my "email_id" being "abc123@gmail.com"
+
+Git config
+3 Creating a local repository
+
+Create a folder on your system. This will serve as a local repository which will later be pushed onto the GitHub website. Use the following command:
+
+git init Mytest
+
+If the repository is created successfully, then you will get the following line:
+
+Initialized empty Git repository in /home/akshay/Mytest/.git/
+
+This line may vary depending on your system.
+
+So here, Mytest is the folder that is created and "init" makes the folder a GitHub repository. Change the directory to this newly created folder:
+
+cd Mytest
+
+4 Creating a README file to describe the repository
+
+Now create a README file and enter some text like "this is a git setup on Linux". The README file is generally used to describe what the repository contains or what the project is all about. Example:
+
+gedit README
+
+You can use any other text editors. I use gedit. The content of the README file will be:
+
+This is a git repo
+
+5 Adding repository files to an index
+
+This is an important step. Here we add all the things that need to be pushed onto the website into an index. These things might be the text files or programs that you might add for the first time into the repository or it could be adding a file that already exists but with some changes (a newer version/updated version).
+
+Here we already have the README file. So, let's create another file which contains a simple C program and call it sample.c. The contents of it will be:
+
+ 
+#include<stdio.h>
+int main()
+{
+printf("hello world");
+return 0;
+}
+
+So, now that we have 2 files
+
+README and sample.c
+
+add it to the index by using the following 2 commands:
+
+git add README
+
+git add sample.c
+
+Note that the "git add" command can be used to add any number of files and folders to the index. Here, when I say index, what I am referring to is a buffer like space that stores the files/folders that have to be added into the Git repository.
+6 Committing changes made to the index
+
+Once all the files are added, we can commit it. This means that we have finalized what additions and/or changes have to be made and they are now ready to be uploaded to our repository. Use the command :
+
+git commit -m "some_message"
+
+"some_message" in the above command can be any simple message like "my first commit" or "edit in readme", etc.
+7 Creating a repository on GitHub
+
+Create a repository on GitHub. Notice that the name of the repository should be the same as the repository's on the local system. In this case, it will be "Mytest". To do this login to your account on https://github.com. Then click on the "plus(+)" symbol at the top right corner of the page and select "create new repository". Fill the details as shown in the image below and click on "create repository" button.
+
+Creating a repository on GitHub
+
+Once this is created, we can push the contents of the local repository onto the GitHub repository in your profile. Connect to the repository on GitHub using the command:
+
+Important Note: Make sure you replace 'user_name' and 'Mytest' in the path with your Github username and folder before running the command!
+
+git remote add origin https://github.com/user_name/Mytest.git
+
+8 Pushing files in local repository to GitHub repository
+
+The final step is to push the local repository contents into the remote host repository (GitHub), by using the command:
+
+git push origin master
+
+Enter the login credentials [user_name and password].
+
+The following image shows the procedure from step 5 to step 8
+
+Pushing files in local repository to GitHub repository
+
+So this adds all the contents of the 'Mytest' folder (my local repository) to GitHub. For subsequent projects or for creating repositories, you can start off with step 3 directly. Finally, if you log in to your GitHub account and click on your Mytest repository, you can see that the 2 files README and sample.c have been uploaded and are visible to all as shown in the following image.
+
+Content uploaded to Github
+Links
+
+    Git - Source Version Control System
+    Github
+
+view as pdf | print
+Share this page:
+
+Suggested articles
+109 Comment(s)
+Add comment
+Name *
+Email *
+p
+Comments
+By: nwnpallewela at: 2015-02-19 05:24:43
+Reply  
+
+This is great... Thanks for your help :)
+
+ 
+
+By: Feragon at: 2015-04-01 15:37:52
+Reply  
+
+Thanks a LOT!!! Very usefull tuto, and very simple. Thanks again.
+
+By: Deepak Kanavikar at: 2015-04-03 18:06:59
+Reply  
+
+This was precisely what i was looking for... Thanks
+
+By: ashutoshh at: 2015-04-13 04:01:17
+Reply  
+
+thanks a lot
+
+By: honlulu at: 2015-04-15 15:51:50
+Reply  
+
+<h1> very helpful xD Thanks a lot </h1>
+
+By: karan at: 2015-05-11 13:03:31
+Reply  
+
+awesome , thank you
+
+By: Chris at: 2015-05-21 08:42:31
+Reply  
+
+Thank you!
+
+By: auchomage at: 2015-06-05 12:58:16
+Reply  
+
+Thanks for this, it is very clear and helpful.
+
+By: vartika at: 2015-07-16 07:13:07
+Reply  
+
+thank you very much for such a clear and concise tutorial! :)
+
+By: saurabh at: 2015-08-04 12:56:46
+Reply  
+
+Thanks a lot, really very helpful.
+
+By: Rajani at: 2015-08-17 05:34:44
+Reply  
+
+Very helpful. Thank you very much
+
+By: Kishor at: 2015-08-24 06:49:59
+Reply  
+
+Best..
+
+By: goldie at: 2015-09-18 09:08:06
+Reply  
+
+awesome... spent so much time but did not get... but with this tutorial... its really easy.. thank u
+
+By: jeet at: 2015-10-01 05:51:01
+Reply  
+
+awesome easy to understand.....
+
+By: swayne at: 2015-10-15 20:48:52
+Reply  
+
+Very nice, concise beginners tutorial!  FYI... one little typo found... In section 5: git add smaple.c  (should be "sample.c")
+
+By: maitreyee at: 2015-11-03 06:03:47
+Reply  
+
+Extremely helpful. I followed it step by step and I got exactly what I wanted
+
+ 
+
+By: Jerry at: 2015-12-04 08:22:32
+Reply  
+
+Bravo!!!
+
+By: neil at: 2015-12-09 07:05:10
+Reply  
+
+Awesome 
+
+By: Bilal at: 2015-12-09 12:21:37
+Reply  
+
+Thank you so much
+
+By: Bilal at: 2015-12-09 12:26:25
+Reply  
+
+one more thing friends, suppose someone get any issue in  git push origin master
+
+please use this git push origin master --force its work for me
+
+By: jorge8979787 at: 2016-01-21 22:01:40
+Reply  
+
+thanks!
+
+By: Luna Das at: 2016-02-05 08:09:57
+Reply  
+
+nice article that what I was looking for :)
+
+By: Murat Ersin at: 2016-02-14 16:51:32
+Reply  
+
+It's work so great.Thanks for this tutorial.
+
+By: om at: 2016-03-02 04:37:53
+Reply  
+
+This is very cool tuto, love it.
+
+By: Chichio at: 2016-03-16 10:38:10
+Reply  
+
+Thanks. But i must run command: git pull origin master before git push origin masterI'm newbie
+
+By: Chatchai Saratakij at: 2016-04-06 15:42:32
+Reply  
+
+Wow, Thank you^_^
+
+By: luan at: 2016-04-07 22:48:23
+Reply  
+
+how to integrate postgresql to github? 
+
+By: Shradha at: 2016-04-11 11:26:38
+Reply  
+
+Thank you so much..This is the most precisely explained tutorial...:)
+
+By: Kautsya Kanu at: 2016-04-20 07:14:09
+Reply  
+
+Best Tutorial that I found.. Thanks a lot!! :) You are really great..
+
+By: yohannes at: 2016-04-20 07:57:22
+Reply  
+
+Thanks that will help for starters like me.
+
+ 
+
+By: Jacob at: 2016-04-28 15:08:57
+Reply  
+
+ This was great, but I initially received a error when I tried the git push origin master. 
+
+The error looks something like this: fatal: unable to access 'https://github.gatech.edu/jc89x0/SevFiewk.git/': server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none
+
+I believe it is a certificate trust issue, but the fix for me was to enter the following commands (ref: http://stackoverflow.com/questions/21181231/server-certificate-verification-failed-cafile-etc-ssl-certs-ca-certificates-c)
+export GIT_SSL_NO_VERIFY=1 #or git config --global http.sslverify falseAfterwards, I am presented with an option to provide my username and password.   
+
+By: Shashikant Singh at: 2016-05-25 09:59:49
+Reply  
+
+Very good tutorial . Very clean explaination. 
+
+By: Devashish Kumar Jaiswal at: 2016-06-28 11:01:07
+Reply  
+
+Thanks a lot..This is very helpful for everyone
+
+By: Tingu at: 2016-08-06 05:24:54
+Reply  
+
+Nice One Article
+
+ 
+
+By: Tingu at: 2016-08-06 05:26:04
+Reply  
+
+ Masaalla article
+
+By: Zakki at: 2016-08-07 13:54:24
+Reply  
+
+Excellent tuto!
+
+By: Graham Newman at: 2016-08-29 15:14:45
+Reply  
+
+Brilliant - many thanks!
+
+By: Ravi Kumar at: 2016-09-05 06:57:45
+Reply  
+
+That's great...Thankyou sir
+
+By: Ishadi at: 2016-09-06 23:54:53
+Reply  
+
+Thanks a lot!
+
+By: subhajyoti at: 2016-09-15 20:18:23
+Reply  
+
+too good
+
+By: Nisal at: 2016-09-21 10:33:47
+Reply  
+
+This is great... Thanks for your help :)
+
+By: Kevin at: 2016-09-24 20:31:47
+Reply  
+
+That's amazing. The best hands on beginner's guide to git. It isn't much of a big deal. Thanks
+
+By: Nikhil Chavda at: 2016-09-25 07:44:03
+Reply  
+
+this tutorial is very usefull for me thank you so much.
+
+By: ahahah at: 2016-10-01 09:21:02
+Reply  
+
+This was soooo helpfull. Thank you soooo much. :))
+
+By: Victor at: 2016-10-11 17:12:18
+Reply  
+
+Thanks for this , I never thought it was so simple, you helpme so much
+
+By: WRONG! at: 2016-10-15 01:21:21
+Reply  
+
+remote add orgin, not add remote origin
+
+By: Irishologram at: 2016-10-26 12:02:34
+Reply  
+
+I just followed this tutorial and create a new github repository, thank you!
+
+By: KC at: 2016-11-25 20:13:05
+Reply  
+
+Thank You! This has been of real help.
+
+By: murali at: 2016-12-05 15:56:47
+Reply  
+
+Thanks for the usefull information....
+
+By: Shrikrishna at: 2016-12-09 15:05:39
+Reply  
+
+Thanks mate exellent article.
+
+By: Eslam Ezzatneshan at: 2016-12-13 10:34:49
+Reply  
+
+Hi,
+
+Thanks for this helpful article.
+
+I am trying to install the following open-source package on my virtual-box Ubuntu:https://github.com/Par4All/par4allTo be honest, I am almost new in Ubuntu and don't know so much about git etc.Could you please help me what should I do step-by-step to install that package? Really appreciate your time. Cheers
+
+Eslam
+
+By: Shivam at: 2016-12-20 03:14:33
+Reply  
+
+This is simply helpful.. Can you also cover for rest ??
+
+By: nullbyte at: 2016-12-25 17:45:58
+Reply  
+
+Thanks a lot.
+
+By: annie at: 2016-12-26 16:05:00
+Reply  
+
+Too good!
+
+By: Sagar PAtil at: 2017-01-06 04:36:15
+Reply  
+
+Great man cool article. Very easy and clear steps provided.
+
+By: Zachary at: 2017-01-09 01:09:04
+Reply  
+
+Basic but very important! Great!
+
+By: Alok Patra at: 2017-01-09 18:33:54
+Reply  
+
+Great detailed explanation. Helped a lot. Thanks
+
+By: martineskobg at: 2017-01-11 14:33:03
+Reply  
+
+Cool Thanks !! :)
+
+By: p81061473525 at: 2017-01-28 15:13:25
+Reply  
+
+This is great...
+
+By: Jona at: 2017-02-06 04:50:02
+Reply  
+
+SO EASY!!!!!!
+
+By: Antz411 at: 2017-03-01 19:28:56
+Reply  
+
+Excellent work!
+
+By: Umer at: 2017-03-27 18:53:12
+Reply  
+
+Many thanks for this wonderful how-to...cheers :)
+
+By: Manjesh at: 2017-04-03 15:29:48
+Reply  
+
+Dude, Your Tutorials are Awesome .
+
+By: Ajay at: 2017-06-12 07:06:01
+Reply  
+
+Thanks  
+
+Steps is fine but if some one want to add all directory  can use
+
+git add .
+
+command 
+
+before doing this change mode of file if required
+
+ 
+
+Thanks
+
+By: Wayne B at: 2017-06-22 19:09:55
+Reply  
+
+Hello, very easy and simple instructions for us noobs. Thank You very much for this simple and easy to understand tutorial!
+
+By: vishnu at: 2017-06-23 06:09:59
+Reply  
+
+Thanks very useful 
+
+By: anvesh at: 2017-06-24 07:25:32
+Reply  
+
+Thanks bro
+
+By: MX1 at: 2017-07-26 08:08:42
+Reply  
+
+Verry cool. Thanks for the awesome tutorial. Helps me get a jump start on installing the new Cuda tool kit on all my machines. Thanks again awesome!
+
+By: prasad at: 2017-08-04 03:01:17
+Reply  
+
+very good.
+
+By: pk at: 2017-08-16 14:02:55
+Reply  
+
+This is great help! thanks
+
+By: John at: 2017-08-24 08:09:37
+Reply  
+
+Great teaching.
+
+By: dhanyesh at: 2017-09-16 04:22:45
+Reply  
+
+Its very useful and effective. Easy to use it
+
+By: rano at: 2017-09-26 12:19:19
+Reply  
+
+Unable to push. NO enter login credentials prompted after running git push origin master.
+
+fatal: unable to access 'https://github.com/myusername/myproject.git/': Failed to connect to 127.0.0.1 port 8888: Connection refused
+
+By: bluescreen777 at: 2017-09-26 20:00:04
+Reply  
+
+Thank you for the help!
+
+By: Sravan Chithari at: 2017-09-28 09:51:11
+Reply  
+
+Best article and very helpful :)
+
+By: Mike Paget at: 2017-09-28 10:29:06
+Reply  
+
+Good job! i like it
+
+By: mikesmith123456 at: 2017-10-02 04:37:58
+Reply  
+
+thank you, thank you thank you.
+
+By: Tasos at: 2017-10-18 17:06:42
+Reply  
+
+Dude, you are the only one who managed to put an actual useful guide for first time users. Thanks a lot!
+
+By: Brandon at: 2017-11-10 05:06:19
+Reply  
+
+Perfect tutorial, thank you so much!
+
+By: Freddy Camacho at: 2017-12-20 21:06:11
+Reply  
+
+Hi, Do you have a tutorial on how to install FROM GitHub via terminal? Thank you
+
+By: Ravi yadav at: 2017-12-30 16:03:28
+Reply  
+
+Thanks.....this is a great guide for beginners :)))
+
+ 
+
+By: Darichy at: 2018-01-09 02:46:34
+Reply  
+
+Thats awesome, thanks
+
+By: Ceero at: 2018-02-28 15:52:59
+Reply  
+
+Thanks for this. It was truly helpful
+
+By: Thanku at: 2018-03-07 05:34:15
+Reply  
+
+Thank you so much bro
+
+By: musaah at: 2018-03-18 14:36:19
+Reply  
+
+hello anyone here please i need help
+
+By: Froot at: 2018-03-19 01:07:42
+Reply  
+
+Yes this is ok, Thanks.
+
+By: Zac at: 2018-03-28 00:32:54
+Reply  
+
+Thank you so much. OMFG
+
+By: gaurav agarwal at: 2018-05-01 18:34:07
+Reply  
+
+Reading package lists... Done Building dependency tree Reading state information... Done Package git is not available, but is referred to by another package. This may mean that the package is missing, has been obsoleted, or is only available from another source E: Package 'git' has no installation candidate this is the result what should iI do ?
+
+By: Ludwig at: 2018-05-03 05:28:21
+Reply  
+
+Great guide! Thank you very much!
+
+By: Anon at: 2018-06-05 22:15:09
+Reply  
+
+Very useful, thanks.
+
+By: dnah at: 2018-06-30 01:36:35
+Reply  
+
+thank you a lot
+
+By: Vikram Chaudhary at: 2018-09-13 10:02:20
+Reply  
+
+Thank you the detailed explanation. It really helped.
+
+By: Abhishek Sharma at: 2018-11-24 12:04:52
+Reply  
+
+fatal: remote origin already exists.
+
+this is what i get after 
+
+ git remote add origin https://github.com/Abhishek-Shr/Mytest.git
+
+this 
+
+what shoud i do?
+
+By: Abhishek Sharma at: 2018-11-24 12:25:57
+Reply  
+
+error: src refspec master does not match any.
+
+error: failed to push some refs to 'https://github.com/Abhishek-Shr/Mytest.git'
+
+What is this?
+
+By: Kumar Vivek at: 2018-11-27 04:31:33
+Reply  
+
+Hi I did all the steps but after step 8th "git push origin master" and after adding this command, it is showing 
+
+Below Error
+
+ 
+
+fatal: The current branch master has no upstream branch.
+
+To push the current branch and set the remote as upstream, use
+
+git push --set-upstream origin master
+
+Please help. 
+
+By: eve at: 2018-12-16 06:55:42
+Reply  
+
+Unable to push - I guess its because I have activated the 2 -step security
+
+it ask for username and password. But said it fails: 
+
+remote: Invalid username or password.
+
+fatal: Authentication failed for 'https://github.com/evezeyl/personal.git/'
+
+But it never ask for the second step of the authentification. Any solution?
+
+Best regards, great guide. Thanks!
+
+By: sasnasteve at: 2019-01-01 13:57:27
+Reply  
+
+Excellent, thanks!!
+
+By: sm1km at: 2019-01-10 21:30:51
+Reply  
+
+The git push command doesn't work if you have 2FA enabled. If you have it, you have to disable two-factor authentication or create a Personal Access Token (see https://stackoverflow.com/questions/29297154/github-invalid-username-or-password)
+
+Great guide btw!
+
+By: Karthikeyan at: 2019-03-18 07:13:39
+Reply  
+
+Thanks for your tutorial..Great help for me..
+
+By: ekowahyudisetiawan at: 2019-04-22 04:42:43
+Reply  
+
+thank you, amazing
+
+By: Ethan at: 2019-05-17 15:46:22
+Reply  
+
+Great tutorial, minor typo in 'git add smaple.c'
+
+By: till at: 2019-05-17 16:18:48
+Reply  
+
+Fixed the typo. Thank you for the hint.
+
+By: Mohammad at: 2019-05-28 00:06:10
+Reply  
+
+very nice, worked for me. Thanks.
+
+By: Aravind at: 2019-06-04 20:46:31
+Reply  
+
+very helpful
+
+By: Gautam Helange at: 2019-06-28 16:29:27
+Reply  
+
+Thank you so much. 
+
+By: Moses at: 2019-07-13 14:40:45
+Reply  
+
+Thanks alot, this really helped...
+
+By: Lamu at: 2019-07-22 13:30:16
+Reply  
+
+This has been my first ever successful git commit I've done without a third person..ONLY you and me
+
+By: Raj at: 2019-09-21 04:36:28
+Reply  
+
+Quick and useful intro to using git. Thanks.
+
+By: vijay kumar at: 2019-09-25 14:48:46
+Reply  
+
+you are awesome for explaining step by step for beginners.
+
+Home
+Installing and using Git and GitHub on Ubuntu Linux: A beginner's guide
+>
+Sign up now!
+
+Tutorial Info
+
+Author:
+    Akshay Pai
+
+Last updated:
+    May 17, 2019
+
+Tags:
+    linux, programming, ubuntu
+
+A new way to manage your work
+The revolutionary project management tool is here and it’s visual. Start Your Free Trial Now.
+Start Free Trial
+Ad
+
+Share This Page
+
+40.2k Followers
+
+Popular Tutorials
+
+    How to create Docker Images with a Dockerfile
+    How to use grep to search for strings in files on the shell
+    How to use the Linux ftp command to up- and download files on the shell
+    How to search files from the Terminal on Linux
+    Vim Editor Basics
+    Setting, Changing and Resetting MySQL Root Passwords
+    A Guide to running a Reverse proxy for HTTP(S), SSH and MySQL/MariaDB using NGINX
+    How To Configure Remote Access To Your Ubuntu Desktop
+    How to Setup ZSH and Oh-my-zsh on Linux
+    CentOS 8 Package Management with DNF on the Command Line
+
+Xenforo skin by Xenfocus
+
+    Contribute
+    Contact
+    Help
+    Imprint and Legal Notice
+    Top
+    RSS-Feed
+
+    Terms and Rules Privacy Policy
+
+Howtoforge © projektfarm GmbH.
+
