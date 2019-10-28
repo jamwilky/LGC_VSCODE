@@ -1,4 +1,4 @@
-New "Git PUll" website
+New "Git Pull" Website:
 https://www.git-tower.com/learn/git/faq/difference-between-git-fetch-git-pull
 TESTING from Orign #2
 Adding changes from ORIGIN repository on 10-28-19 @ 12:52pm
@@ -8,6 +8,8 @@ Adding from LOCAL repository NOTES on 10-28-19 @ 12:48pm
 git add
 git commit
 git push origin master
+git pull origin master
+
 
 cw-ky@TKPD-001:~/LGC_VSCODE$ 
 jcw-ky@TKPD-001:~/LGC_VSCODE$ git add README2
